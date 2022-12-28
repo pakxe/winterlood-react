@@ -3,10 +3,14 @@ import Counter from './Counter';
 import MyHeader from './MyHeader';
 
 function App() {
+  const counterProps = {
+    a: 1,
+    b: 2,
+  };
   return (
     <div>
       <MyHeader />
-      <Counter a={1} initialValue={5} />
+      <Counter {...counterProps} />
     </div>
   );
 }
