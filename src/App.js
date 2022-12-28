@@ -1,36 +1,24 @@
 // import './App.css';
+import Counter from './Counter';
 import MyHeader from './MyHeader';
 
 function App() {
-  const name = '박세현';
-
-  const style = {
-    // camelCase 사용
-    App: {
-      backgroundColor: 'black',
-    },
-    h2: {
-      color: 'red',
-    },
-    bold_text: {
-      color: 'green',
-    },
-  };
-
   return (
-    <div style={style.App}>
+    <div>
       <MyHeader />
-      <h2 style={style.h2}>안녕 리액트 {name}</h2>
-      <b style={style.bold_text}>React.js</b>
+      <Counter />
     </div>
   );
 }
 /**
- * 키워드
+ * 공부
  *
  * self closing tag
  * 최상위 태그
  * jsx에서는 class라는 단어가 js의 예약어이기 떄문에 className으로 사용한다.
+ * jsx내부에 js코드 삽입은 {} 안에 한다. 이 안엔 숫자나 문자열로 평가될 수 있는 표현식을 넣어야 한다.
+ *  삼항 연산자도 넣을 수 있다.
+ * 조건에 따라 각각 다른 요소로 렌더링 할 수 있다. 이런 방식의 렌더링을 조건부 렌더링이라고 한다. 많이 사용하게 된다.
  */
 
 export default App;
