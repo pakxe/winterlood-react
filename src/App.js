@@ -6,7 +6,9 @@ function App() {
   const counterProps = {
     a: 1,
     b: 2,
+    initialProps: 1,
   };
+
   return (
     <div>
       <MyHeader />
@@ -23,6 +25,7 @@ function App() {
  * jsx내부에 js코드 삽입은 {} 안에 한다. 이 안엔 숫자나 문자열로 평가될 수 있는 표현식을 넣어야 한다.
  *  삼항 연산자도 넣을 수 있다.
  * 조건에 따라 각각 다른 요소로 렌더링 할 수 있다. 이런 방식의 렌더링을 조건부 렌더링이라고 한다. 많이 사용하게 된다.
+ * 객체의 spread 연산자를 사용해서 props를 전달할 수도 있다.
  */
 
 export default App;
