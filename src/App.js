@@ -1,4 +1,5 @@
 // import './App.css';
+import Container from './Container';
 import Counter from './Counter';
 import MyHeader from './MyHeader';
 
@@ -10,10 +11,12 @@ function App() {
   };
 
   return (
-    <div>
-      <MyHeader />
-      <Counter {...counterProps} />
-    </div>
+    <Container>
+      <div>
+        <MyHeader />
+        <Counter {...counterProps} />
+      </div>
+    </Container>
   );
 }
 /**
