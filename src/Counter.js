@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const Counter = () => {
-  console.log('call counter');
+const Counter = (props) => {
+  console.log(props);
   const [count, setCount] = useState(0);
 
   const onIncrease = () => {

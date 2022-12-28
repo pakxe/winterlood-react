@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <MyHeader />
-      <Counter />
+      <Counter a={1} initialValue={5} />
     </div>
   );
 }
